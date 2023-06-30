@@ -1,0 +1,906 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Manrope:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+    --navbarbg: #dcf2f980;   
+    --primary:#0d244a;
+    --secondary:#fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;   
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+
+html{
+    font-size: 65%;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+
+/* Header start */
+
+.rootlayoutcontainer header{
+    display: flex;
+    align-items: center;
+    padding: 32px 24px 16px 16px;
+    justify-content: space-between;
+    background-color: var(--navbarbg) ;
+}
+
+.rootlayoutlogoimage{
+    width: 180px;
+    height: auto;
+}
+
+.rootlayoutlinks a{
+    color: #000;
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 32px 0 0 ;
+}
+
+.rootlayoutlinks a:nth-child(5){
+    text-decoration: underline;
+}
+
+.rootlayoutsignupbutton{
+    font-size: 20px;
+    font-weight: 800;
+    padding: 10px 20px;
+    border-radius: 35px;
+    transition: 5ms ease-in-out;
+    background-color: transparent;
+    border: 3px solid var(--primary)  ;
+}
+
+.rootlayoutsignupbutton:hover {
+    cursor: pointer;
+    color: var(--secondary);
+    background-color: rgba(13, 36, 74,1);
+}
+
+.rootlayoutbars{
+    display: none;
+    color: #000;
+    font-size: 32px;
+    margin: 0 32px 0 0;
+    padding: 12px 12px;
+}
+
+.rootlayoutbars:hover{
+    cursor: pointer;
+}
+
+/* Header Ends */
+
+/* Footer Starts */
+
+footer{
+    padding: 48px 48px;
+    color: white;
+    background-color: var(--primary);
+}
+.footerfirstimagepara{
+    display: flex;
+    align-items: center;
+}
+.footerImage{
+    width: 20%;
+    background-color: white;
+}
+.footerfirstdiv{
+    padding: 32px 32px;
+}
+.footerfirstdiv span{
+    display: flex;
+    margin: 32px 0 0 0;
+    align-items: center;
+}
+.footerfirstdiv span{
+    font-size: 24px;
+}
+.footerpowered{
+    width: 5%;
+    margin: 0 0 0 8px;   
+}
+.footerfirstpara{
+    font-size: 24px;
+    padding: 24px 24px 16px 35%;
+}
+.footerseconddiv{
+    display: flex;
+    padding: 32px 32px 32px 32px;
+    justify-content: space-between;
+}
+.footerseconddivhead h2{
+    font-size: 24px;
+}
+.footerseconddivhead p{
+    font-size: 16px;
+    padding-right:24px ;
+    margin: 16px 24px 32px 0;
+}
+.footersubscription input{
+    width: 70%;
+    border: none;
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 0 16px 16px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.footersubscription button{
+    width: 20%;
+    border: none;
+    color: white;
+    font-size: 20px;
+    padding: 20px 0 19px 0;
+    background-color: black;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.footersubscription button:hover{
+    cursor: pointer;
+}
+.footersubscription p{
+    font-size: 16px;
+    margin-right: 0;
+}
+.footersubscription a{
+    color: white;
+    padding: 0 0 32px 0;
+    
+}
+.footerseconddivdata1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.footerseconddivdata1 a{
+    color: white;
+    font-size: 20px;
+    text-align: start;
+    padding: 10px 24px 10px 0 ;
+}
+.footerseconddivdata2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footerseconddivdata2 a{
+    color: white;
+    font-size: 20px;
+    text-align: start;
+    padding: 10px 24px 10px 0 ;
+}
+.footerseconddivdata3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.footerseconddivdata3 a{
+    color: white;
+    font-size: 20px;
+    text-align: start;
+    padding: 10px 0 10px 0 ;
+}
+.footerthirddiv{
+    display: flex;
+    align-items: center;
+    padding: 32px 32px 0 32px;
+    justify-content: space-between;
+}
+.footerthirddivicons{
+    display: flex;
+    font-size: 40px;
+    text-align: start;
+    padding: 16px 0 24px 24px;
+}
+.footerthirddivicondata{
+    margin: 0 32px 0 0;
+}
+.footerthirddivicondata:hover{
+    cursor:pointer;
+}
+.footerthirddiv p{
+    font-size: 20px;
+    margin-right: 24px;
+    padding: 0 24px 0 0  ;
+}
+.footerseconddivmain{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media (min-width:890px) and (max-width:1137px){
+    html{
+        font-size: 60%;
+    }
+    .rootlayoutlinks{
+        width: 40%;
+        height: 100%;
+        right: -100%;
+        z-index: 1001;
+        display: flex;
+        position: fixed;
+        transition: 300ms all;
+        flex-direction: column;
+        background-color: var(--secondary);
+    }
+
+    .rootlayoutlinks a:nth-child(1){
+        margin: 80px 0 0 0 ;
+    }
+
+    .rootlayoutlinks a:not(:last-child){
+        size: 24px;
+        font-size: 16px;
+        line-height: 16px;
+        padding: 24px 0 24px 32px;
+    }
+
+    .rootlayoutlinks.actives{
+        right: 0;
+        top: 0;
+    }
+    .rootlayoutsignupbutton{
+        font-size: 24px;
+        padding: 10px 60px;
+        margin: 24px 0 0 16px;
+    }
+    .rootlayoutbars{
+        z-index: 1002;
+        position: relative;
+        padding: 0 0 0 8px;
+        display: inline-block;
+    } 
+    footer{
+        color: white;
+        padding: 48px 32px 48px 32px;
+        background-color: var(--primary);
+    }
+    .footerfirstimagepara{
+        display: inline-block;
+    }
+    .footerImage{
+        width: 60%;
+        background-color: white;
+    }
+    .footerfirstdiv span{
+        display: flex;
+        margin: 32px 0 0 0;
+        align-items: center;
+    }
+    .footerfirstdiv span{
+        font-size: 24px;
+    }
+    .footerpowered{
+        width: 15%;
+        margin: 0 0 0 8px;   
+    }
+    .footerfirstpara{
+        font-size: 24px;
+        padding: 24px 0 16px 0;
+    }
+    
+    .footerseconddiv{
+        display: block;
+        padding: 32px 0 32px 0;
+    }
+    .footerseconddivhead h2{
+        font-size: 32px;
+    }
+    .footerseconddivhead p{
+        font-size: 24px;
+        margin: 16px 0 32px 0;
+    }
+    .footersubscription input{
+        width: 70%;
+        border: none;
+        font-size: 24px;
+        align-items: center;
+        justify-content: center;
+        padding: 24px 0 24px 16px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+    .footersubscription button{
+        width: 30%;
+        border: none;
+        color: white;
+        font-size: 32px;
+        padding: 15px 0 22px 0;
+        background-color: black;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+    .footersubscription p{
+        font-size: 24px;
+        margin-right: 0;
+    }
+    .footersubscription a{
+        color: white;
+        padding: 0 0 32px 0;
+        
+    }
+    .footerseconddivdata1{
+        display: flex;
+        padding: 0 0 16px 0;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+    .footerseconddivdata1 a{
+        padding: 8px ;
+        font-size: 24px;
+        color: white;
+    }
+    .footerseconddivdata2{
+        display: flex;
+        padding: 0 0 16px 0;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footerseconddivdata2 a{
+        padding: 8px ;
+        font-size: 24px;
+        color: white;
+    }
+    .footerseconddivdata3{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footerseconddivdata3 a{
+        padding: 8px ;
+        font-size: 24px;
+        color: white;
+    }
+    .footerthirddiv{
+        display: flex;
+        padding: 32px 0 32px 0;
+        flex-direction: column;
+    }
+    .footerthirddivicons{
+        display: flex;
+        font-size: 56px;
+        align-items: center;
+        justify-content: center;
+        padding: 16px 0 24px 0;
+    }
+    .footerthirddivicondata{
+        margin: 0 64px 0 0;
+    }
+    .footerthirddiv p{
+        padding: 0;
+        font-size: 24px;
+        margin-right: 0;
+    }
+    .footerseconddivmain{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width:635px) and (max-width:889px){
+    html{
+        font-size: 55%;
+    }
+    .rootlayoutlinks{
+        width: 40%;
+        right: -100%;
+        height: 100%;
+        z-index: 1001;
+        display: flex;
+        position: fixed;
+        transition: 300ms all;
+        flex-direction: column;
+        background-color: var(--secondary);
+    }
+    .rootlayoutlinks a:nth-child(1){
+        margin: 80px 0 0 0 ;
+    }
+
+    .rootlayoutlinks a:not(:last-child){
+        size: 24px;
+        font-size: 16px;
+        line-height: 16px;
+        padding: 24px 0 24px 32px;
+    }
+
+    .rootlayoutlinks.actives{
+        right: 0;
+        top: 0;
+    }
+    .rootlayoutsignupbutton{
+        font-size: 24px;
+        padding: 10px 60px;
+        margin: 24px 0 0 16px;
+    }
+    .rootlayoutbars{
+        z-index: 1002;
+        padding: 0 0 0 8px;
+        position: relative;
+        display: inline-block;
+    }
+    
+    footer{
+        color: white;
+        padding: 48px 32px 48px 32px;
+        background-color: var(--primary);
+    }
+    
+    .footerfirstimagepara{
+        display: inline-block;
+    }
+    .footerImage{
+        width: 60%;
+        background-color: white;
+    }
+    .footerfirstdiv span{
+        display: flex;
+        margin: 32px 0 0 0;
+        align-items: center;
+    }
+    .footerfirstdiv span{
+        font-size: 16px;
+    }
+    .footerpowered{
+        width: 17%;
+        margin: 0 0 0 8px;   
+    }
+    .footerfirstpara{
+        font-size: 16px;
+        padding: 24px 0 16px 0;
+    }
+    .footerseconddivmain{
+        align-items: start;
+        flex-direction: column;
+    }
+    .footerseconddiv{
+        padding: 32px 0 32px 0;
+        display: inline-block;
+    }
+    .footerseconddivhead h2{
+        font-size: 24px;
+    }
+    .footerseconddivhead p{
+        font-size: 16px;
+        margin: 16px 0 32px 0;
+    }
+    .footersubscription input{
+        border: none;
+        width: 70%;
+        font-size: 24px;
+        align-items: center;
+        justify-content: center;
+        padding: 24px 0 24px 16px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+    .footersubscription button{
+        width: 30%;
+        border: none;
+        color: white;
+        font-size: 32px;
+        padding: 15px 0 22px 0;
+        background-color: black;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+    .footersubscription p{
+        font-size: 24px;
+        margin-right: 0;
+    }
+    .footersubscription a{
+        color: white;
+        padding: 0 0 32px 0;
+        
+    }
+    .footerseconddivdata1{
+        display: flex;
+        padding: 0 0 16px 0;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footerseconddivdata1 a{
+        padding: 8px ;
+        font-size: 24px;
+        color: white;
+    }
+    .footerseconddivdata2{
+        display: flex;
+        padding: 0 0 16px 0;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footerseconddivdata2 a{
+        padding: 8px ;
+        font-size: 24px;
+        color: white;
+    }
+    .footerseconddivdata3{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footerseconddivdata3 a{
+        padding: 8px ;
+        font-size: 24px;
+        color: white;
+    }
+    .footerthirddiv{
+        display: flex;
+        padding: 32px 0 32px 0;
+        flex-direction: column;
+    }
+    .footerthirddivicons{
+        display: flex;
+        font-size: 48px;
+        align-items: center;
+        justify-content: center;
+        padding: 16px 0 24px 0;
+    }
+    .footerthirddivicondata{
+        margin: 0 32px 0 0;
+    }
+    .footerthirddiv p{
+        margin: 0;
+        padding: 0;
+        font-size: 24px;
+    }
+}
+
+@media (min-width:301px) and (max-width:634px){
+    html{
+        font-size: 50%;
+    }
+    .rootlayoutlinks{
+        width: 78%;
+        right: -100%;
+        height: 100%;
+        z-index: 1001;
+        display: flex;
+        position: fixed;
+        transition: 500ms all;
+        flex-direction: column;
+        background-color: var(--secondary);
+    }
+
+    .rootlayoutlinks a:nth-child(1){
+        margin: 80px 0 0 0 ;
+    }
+
+    .rootlayoutlinks a:not(:last-child){
+        size: 24px;
+        font-size: 16px;
+        line-height: 16px;
+        padding: 24px 0 24px 32px;
+    }
+
+    .rootlayoutlinks.actives{
+        right: 0;
+        top: 0;
+    }
+    .rootlayoutbars{
+        z-index: 1002;
+        position: relative;
+        padding: 0 8px 0 12px;
+        display: inline-block;
+        margin: 0 16px 0 0;
+    }
+
+    .rootlayoutlogoimage{
+        size: 0;
+        width: 200px;
+        margin: 0 0 0 0;
+    }
+
+    .rootlayoutsignupbutton{
+        font-size: 24px;
+        padding: 10px 40px;
+        margin: 24px 0 0 8px;
+    }
+   
+    footer{
+        color: white;
+        padding: 48px 32px 48px 32px;
+        background-color: var(--primary);
+    }
+    .footerfirstimagepara{
+        display: inline-block;
+    }
+    .footerImage{
+        width: 60%;
+        background-color: white;
+    }
+    .footerfirstdiv span{
+        display: flex;
+        margin: 32px 0 0 0;
+        align-items: center;
+    }
+    .footerfirstdiv span{
+        font-size: 16px;
+    }
+    .footerpowered{
+        width: 17%;
+        margin: 0 0 0 8px;   
+    }
+    .footerfirstpara{
+        font-size: 16px;
+        padding: 24px 0 16px 0;
+    }
+    .footerseconddivmain{
+        align-items: start;
+        flex-direction: column;
+    }
+    .footerseconddiv{
+        display: block;
+        padding: 32px 0 32px 0;
+    }
+    .footerseconddivhead h2{
+        font-size: 24px;
+    }
+    .footerseconddivhead p{
+        font-size: 16px;
+        margin: 16px 0 32px 0;
+    }
+    .footersubscription input{
+        width: 70%;
+        border: none;
+        font-size: 16px;
+        align-items: center;
+        justify-content: center;
+        padding: 24px 0 24px 16px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+    }
+    .footersubscription button{
+        width: 30%;
+        border: none;
+        color: white;
+        font-size: 24px;
+        padding: 15px 0 22px 0;
+        background-color: black;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+    .footersubscription a{
+        color: white;
+        padding: 0 0 32px 0;
+    }
+    .footerseconddivdata1{
+        display: flex;
+        padding: 0 0 16px 0;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footerseconddivdata1 a{
+        padding: 8px ;
+        font-size: 16px;
+        color: white;
+    }
+    .footerseconddivdata2{
+        display: flex;
+        padding: 0 0 16px 0;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footerseconddivdata2 a{
+        padding: 8px ;
+        font-size: 16px;
+        color: white;
+    }
+    .footerseconddivdata3{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footerseconddivdata3 a{
+        padding: 8px ;
+        font-size: 16px;
+        color: white;
+    }
+    .footerthirddiv{
+        display: flex;
+        padding: 32px 0 32px 0;
+        flex-direction: column;
+    }
+    .footerthirddivicons{
+        display: flex;
+        font-size: 40px;
+        align-items: center;
+        padding: 16px 0 24px 0;
+        justify-content: center;
+    }
+    .footerthirddivicondata{
+        margin: 0 32px 0 0;
+    }
+    .footerthirddiv p{
+        font-size: 16px;
+        padding: 0;
+        margin-right: 0;
+    }
+    
+}
+@media (max-width:300px){
+    html{
+        font-size: 45%;
+    }
+    .rootlayoutlinks{
+        width: 80%;
+        right: -100%;
+        height: 100%;
+        z-index: 1001;
+        display: flex;
+        position: fixed;
+        transition: 300ms all;
+        flex-direction: column;
+        background-color: var(--secondary);
+    }
+
+    .rootlayoutlinks a:nth-child(1){
+        margin: 80px 0 0 0 ;
+    }
+
+    .rootlayoutlinks a:not(:last-child){
+        size: 16px;
+        font-size: 16px;
+        line-height: 16px;
+        padding: 24px 0 24px 32px;
+    }
+
+    .rootlayoutlinks.actives{
+        right: 0;
+        top: 0;
+    }
+    .rootlayoutbars{
+        z-index: 1001;
+        font-size: 24px;
+        margin: 0 0 0 0;
+        padding: 0 0 0 0;
+        position: relative;
+        display: inline-block;
+    }
+    .rootlayoutlogoimage{
+        width: 100px;
+        height: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .rootlayoutsignupbutton{
+        font-size: 16px;
+        padding: 10px 20px;
+        margin: 8px 0 0 16px;
+    }
+    footer{
+        color: white;
+        padding: 48px 16px 48px 16px;
+        background-color: var(--primary);
+    }
+    .footerfirstimagepara{
+        display: inline-block;
+    }
+    .footerImage{
+        width: 60%;
+        background-color: white;
+    }
+    .footerfirstdiv span{
+        display: flex;
+        margin: 32px 0 0 0;
+        align-items: center;
+    }
+    .footerfirstdiv span{
+        font-size: 16px;
+    }
+    .footerpowered{
+        width: 40%;
+        margin: 0 0 0 8px;   
+    }
+    .footerfirstpara{
+        font-size: 16px;
+        padding: 24px 0 16px 0;
+    }
+    .footerseconddivmain{
+        align-items: start;
+        flex-direction: column;
+    }
+    .footerseconddiv{
+        padding: 32px 0 32px 0;
+        display: inline-block;
+    }
+    .footerseconddivhead h2{
+        font-size: 24px;
+    }
+    .footerseconddivhead p{
+        font-size: 16px;
+        margin: 16px 0 32px 0;
+    }
+    .footersubscription input{
+        width: 70%;
+        border: none;
+        align-items: center;
+        justify-content: center;
+        padding: 16px 0 16px 8px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        font-size: 16px;
+    }
+    .footersubscription button{
+        width: 30%;
+        border: none;
+        color: white;
+        font-size: 16px;
+        padding: 18px 0 18px 0;
+        background-color: black;
+        border-top-right-radius: 8px;
+        border-bottom-right-radius: 8px;
+    }
+    .footersubscription a{
+        color: white;
+        padding: 0 0 32px 0;
+    }
+    .footerseconddivdata1{
+        display: flex;
+        padding: 0 0 16px 0;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footerseconddivdata1 a{
+        padding: 8px ;
+        color: white;
+        font-size: 16px;
+    }
+    .footerseconddivdata2{
+        display: flex;
+        padding: 0 0 16px 0;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footerseconddivdata2 a{
+        padding: 8px ;
+        font-size: 16px;
+        color: white;
+    }
+    .footerseconddivdata3{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .footerseconddivdata3 a{
+        padding: 8px ;
+        font-size: 16px;
+        color: white;
+    }
+    .footerthirddiv{
+        display: flex;
+        padding: 32px 0 32px 0;
+        flex-direction: column;
+    }
+    .footerthirddivicons{
+        display: flex;
+        font-size: 24px;
+        align-items: center;
+        justify-content: center;
+        padding: 23px 0 24px 0;
+    }
+    .footerthirddivicondata{
+        margin: 0 16px 0 0;
+    }
+    .footerthirddiv p{
+        font-size: 16px;
+        margin: 0;
+        padding: 0;
+    }
+}
+/* Media queries Ends */

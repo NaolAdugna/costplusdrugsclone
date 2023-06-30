@@ -1,0 +1,749 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Manrope:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+    --navbarbg: #dcf2f980;   
+    --primary: #13376c;
+    --secondary:#fff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;   
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+
+html{
+    font-size: 65%;
+    overflow: auto;
+    scroll-behavior: smooth;
+}
+/* Upper Provider Etart */
+.patientContainer{
+    color: var(--primary);
+}
+.patientContentHeader h2{
+    font-size: 48px;
+    margin:0 0 32px 0;
+    text-align: center;
+    padding: 24px 0 32px 0;
+    background-color: var(--navbarbg);
+}
+
+.patientAwareness{
+    background-color: white;
+    padding: 24px 16px 24px 16px;
+}
+.patientAwarenessTitle{
+    font-size: 32px;
+    text-align: center;
+    padding: 24px 64px 0 64px;
+}
+
+.patientAwareness p{
+    font-size: 16px;
+    text-align: center;
+    padding: 24px 0 0 0;
+}
+.patientAwarenessContent{
+    display: flex;
+    margin: 48px 0 0 0;
+    justify-content: space-around;
+}
+.patientAwarenessData{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.patientAwarenessData img{
+    width: 25%;
+
+}
+.patientAwarenessData h2{
+    font-size: 16px;
+    text-align: center;
+    padding:16px 24px 40px 24px;
+}
+
+
+.prescribeContainer{
+    padding: 64px 0 64px 0 ;
+    color: var(--secondary);
+    background-color: var(--primary);
+}
+.prescribeContentTitle{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+.prescrbecontent{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+    margin: 0 24px 0 20%;
+    color:var(--primary);
+    background-color: whitesmoke;
+    justify-content: space-around;
+}
+.prescrbecontent img{
+    width: 20%;
+    margin-left: 32px;
+}
+.prescribeheadpara{
+    font-size: 20px;
+    padding: 24px 28px 32px 28px;
+}
+.prescrbecontent span{
+    color: orange;
+}
+.prescribecontentbottom{
+    display: flex;
+    align-items: center;
+    padding: 0 24px 0 24px;
+    flex-direction: column;
+    justify-content: center;
+}
+.prescribecontentbottom h2{
+    font-size: 24px;
+    margin: 32px 0 0 0;
+    text-align: center;
+}
+.prescribecontentbottom i{
+    font-size: 20px;
+    padding: 24px 0 24px 0;
+}
+.prescribecontentbottom strong{
+    font-size: 20px;
+    padding: 0 0 0 0;
+    text-align: center;
+}
+.prescribecontentbottom p{
+    font-size: 18px;
+    padding: 8px 24px 24px 24px;
+}
+.prescribecontentbottom button{
+    width: 30%;
+    border: none;
+    font-size: 29px;
+    padding: 10px 35px;
+    border-radius: 35px;
+    margin: 0 35% 0 35%;
+    background-color: orange;
+}
+.prescribecontentbottom button:hover{
+    cursor: pointer;
+}
+.patientsThanks{
+    padding: 160px 24px 160px 24px;
+    background-color: var(--navbarbg);
+}
+.patientsThanks h2{
+    font-size: 32px;
+    text-align: center;
+}
+.patientsContent{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 64px 88px 48px 88px ;
+}
+.patientsThanksData{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.patientsThanksIcon{
+    font-size: 24px;
+    color: #007aff;
+}
+.patientsThanksData p{
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: center;
+    padding: 16px 24px 0 8px;
+}
+.partnerContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    padding: 80px 24px 88px 24px;
+    background-position: 20px 500px;
+    background-image: url("../image/providers/plus1.png");
+}
+.partnerContainer img{
+    width: 50%;
+    background-repeat: no-repeat;
+    background-position: 10px 400px;
+    background-image: url("../image/providers/plus3.png");
+}
+.partnerContentBottom{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 64px 40px 64px 64px;
+}
+.partnerContentBottom h2{
+    font-size: 32px;
+    text-align:start;
+    padding-bottom: 16px;
+}
+.partnerContentBottom p{
+    font-size: 20px;
+    text-align:start;
+    padding-left: 80px;
+    padding-right: 48px;
+    color: rgba(0, 0, 0, 0.8);
+}
+.faqContainer{
+    padding: 64px 24px 112px 24px;
+}
+.faqContainer h1{
+    font-size: 24px;
+    text-align: center;
+    padding-bottom: 16px;
+}
+.faqContainer h4{
+    font-size: 16px;
+    text-align: center;
+    color: var(--primary);
+}
+.faqDataContainer{
+    padding: 40px 0 40px 0;
+}
+.faqContent{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin: 24px 0 0 0;
+    border: 1px solid rgba(0, 0, 0,.1);
+    position: relative;
+}
+.faqContent:hover{
+    cursor: pointer;
+}
+.faqContent h2{
+    display: flex;
+    font-size: 24px;
+    text-align: start;
+    align-items: center;
+    padding: 16px 48px 16px 8px;
+
+}
+.faqIcon{
+    right: 0;
+    font-size: 24px;
+    color: #f27756;
+    position: absolute;
+    font-weight: bolder;
+    padding: 0 100px 0 16px;
+}
+.faqDescription{
+    font-size: 20px;
+    text-align: start;
+    padding: 16px 48px 16px 16px;
+}
+.faqContainer button{
+    width: 30%;
+    font-size: 24px;
+    margin-left: 35%;
+    margin-right:35% ;
+    padding: 10px 35px;
+    border-radius: 35px;
+    color: var(--secondary);
+    background-color: var(--primary);
+}
+/* Upper Provider Ends */
+
+/* Media Queries Start */
+@media (min-width:890px) and (max-width:1137px){
+    .patientContentHeader h2{
+        font-size: 32px;
+    }
+    .patientAwarenessContent{
+        margin: 48px 0 0 0;
+    }
+    .prescrbecontent{
+        width: 50%;
+        margin: 0 24px 0 25%;
+        flex-direction: column;
+        justify-content: center;
+        background-position:top;
+        background-color: whitesmoke;
+        background-repeat: no-repeat;
+        background-image: url("../image/providers/prescribeinput.png");
+    }
+    .prescrbecontent img{
+        width: 30%;
+    }
+    .prescribeheadpara{
+        font-size: 24px;
+        padding: 24px 8px 32px 8px;
+    }
+    .prescribecontentbottom{
+        background-position: left;
+        background-repeat: no-repeat;
+        background-image: url("../image/providers/plus2.png");
+    }
+    .prescribecontentbottom i{
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-image: url("../image//providers/plus3.png");
+    }
+    .prescribecontentbottom p{
+        background-position: left;
+        background-repeat: no-repeat;
+        background-image: url("../image//providers/plus1.png");
+    }
+    .prescribecontentbottom button{
+        width: 50%;
+        margin: 0 25% 0 25%;
+    }
+    .patientsThanks{
+        flex-direction: column;
+        padding: 112px 24px 112px 24px;
+    }
+    .patientsThanks h2{
+        margin-bottom: 40px;
+    }
+    .patientsContent{
+        flex-direction: column;
+    }
+    .patientsThanksData{
+        flex-direction: column;
+    }
+    .patientsThanksIcon{
+        padding: 32px 0 8px 0;
+    }
+    .patientsThanksData p{
+        padding: 0 160px 0 160px;
+    }
+    .partnerContentBottom{
+        padding: 64px 16px 64px 32px;
+    }
+    .partnerContentBottom h2{
+        text-align:center;
+    }
+    .partnerContentBottom p{
+        padding-left: 24px;
+    }
+    .faqContainer{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .faqContent{
+        width: 95%;
+        margin: 24px 0 0 0;
+        margin-right: 2.5%;
+        margin-left: 2.5%;
+    }
+    .faqContent h2{
+        padding: 16px 32px 16px 8px;
+    }
+    .faqIcon{
+        padding: 0 72px 0 8px;
+    }
+    .faqDescription{
+        font-size: 24px;
+        padding: 16px 16px 8px 16px;
+    }
+    .faqContainer button{
+        width: 40%;
+        margin-right:30% ;
+        margin-left: 30%;
+    }
+}
+
+@media (min-width:635px) and (max-width:889px){
+    .patientContentHeader h2{
+        font-size: 32px;
+    }
+    .patientAwarenessTitle{
+        font-size: 24px;
+    }
+    .prescribeContainer{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .prescribeContentTitle{
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 32px;
+    }
+    .prescrbecontent{
+        margin: 0 24px 0 24px;
+        flex-direction: column;
+        background-position:top;
+        justify-content: center;
+        background-repeat: no-repeat;
+        background-image: url("../image/providers/prescribeinput.png");
+    }
+    .prescrbecontent img{
+        width: 30%;
+    }
+    .prescribeheadpara{
+        font-size: 16px;
+        padding: 24px 8px 32px 8px;
+    }
+    .prescribecontentbottom{
+        background-position: left;
+        background-repeat: no-repeat;
+        background-image: url("../image/providers/plus2.png");
+    }
+    .prescribecontentbottom h2{
+        font-size: 16px;
+    }
+    .prescribecontentbottom i{
+        font-size: 13px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-image: url("../image//providers/plus3.png");
+    }
+    .prescribecontentbottom strong{
+        font-size: 16px;
+    }
+    .prescribecontentbottom p{
+        font-size: 10px;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-image: url("../image//providers/plus1.png");
+    }
+    .prescribecontentbottom button{
+        width: 50%;
+        font-size: 24px;
+        margin: 0 25% 0 25%;
+    }
+    .patientsThanks{
+        padding: 112px 24px 112px 24px;
+    }
+    .patientsThanks h2{
+        margin-bottom: 40px;
+    }
+    .patientsContent{
+        padding:40px 40px;
+        flex-direction: column;
+        justify-content: center;
+     }
+     .patientsThanksData{
+        flex-direction: column;
+        justify-content: start;
+    }
+    .patientsThanksIcon{
+        font-size: 20px;
+        padding-bottom: 4px;
+    }
+    .patientsThanksData p{
+        font-size: 16px;
+        padding: 0 0 24px 0;
+    }
+    .partnerContentBottom{
+        padding: 64px 8px 64px 8px;
+    }
+    .partnerContentBottom h2{
+        text-align:center;
+    }
+    .partnerContentBottom p{
+        padding-left: 24px;
+    }
+    .faqContainer{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .faqContent{
+        width: 95%;
+        margin-left: 2.5%;
+        margin: 24px 0 0 0;
+        margin-right: 2.5%;
+    }
+    .faqContent h2{
+        padding: 16px 32px 16px 8px;
+    }
+    .faqIcon{
+        padding: 0 40px 0 8px;
+    }
+    .faqDescription{
+        font-size: 24px;
+        padding: 16px 16px 8px 16px;
+    }
+    .faqContainer button{
+        width: 60%;
+        margin-right:20% ;
+        margin-left: 20%;
+    }
+}
+
+@media (min-width:301px) and (max-width:634px){
+    .patientContentHeader h2{
+        font-size: 24px;
+    }
+    .patientAwarenessTitle{
+        font-size: 24px;
+        padding: 24px 0 0 0;
+    }
+    .patientAwarenessContent{
+        flex-direction: column;
+    }
+    .prescribeContainer{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .prescrbecontent{
+        width: 80%;
+        margin: 0 24px 0 24px;
+        justify-content: center;
+        flex-direction: column;
+        background-position:top;
+        background-repeat: no-repeat;
+        background-image: url("../image/providers/prescribeinput.png");
+    }
+    .prescrbecontent img{
+        width: 30%;
+    }
+    .prescribeheadpara{
+        font-size: 16px;
+        padding: 24px 8px 32px 8px;
+    }
+    .prescribecontentbottom{
+        background-position: left;
+        background-repeat: no-repeat;
+        background-image: url("../image/providers/plus2.png");
+    }
+    .prescribecontentbottom h2{
+        font-size: 16px;
+    }
+    .prescribecontentbottom i{
+        font-size: 13px;
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-image: url("../image//providers/plus3.png");
+    }
+    .prescribecontentbottom strong{
+        font-size: 16px;
+    }
+    .prescribecontentbottom p{
+        font-size: 10px;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-image: url("../image//providers/plus1.png");
+    }
+    .prescribecontentbottom button{
+        width: 60%;
+        font-size: 16px;
+        margin: 0 20% 0 20%;
+    }
+    .patientsThanks{
+        flex-direction: column;
+    }
+    .patientsContent{
+        padding:40px 40px;
+        align-items: start;
+        flex-direction: column;
+        justify-content: center;
+     }
+     .patientsThanks h2{
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    .patientsThanksData{
+        flex-direction: column;
+        justify-content: start;
+    }
+    .patientsThanksIcon{
+        font-size: 20px;
+        padding:0 0 0 20px;
+        text-align: center;
+    }
+    .patientsThanksData p{
+        font-size: 16px;
+        padding: 0 0 24px 0;
+    }
+    .partnerContainer{
+        background-position: 50px 300px;
+        flex-direction: column;
+    }
+    .partnerContainer img{
+        width: 80%;
+        background-position: 20px 150px;
+    }
+    .partnerContentBottom{
+        padding: 64px 0 64px 0;
+    }
+    .partnerContentBottom h2{
+        font-size: 24px;
+        text-align:center;
+    }
+    .partnerContentBottom p{
+        font-size: 16px;
+        padding: 0;
+    }
+    .faqContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .faqDataContainer{
+        padding: 40px 0 40px 0;
+    }
+    .faqContent{
+        width: 95%;
+        margin: 24px 0 0 0;
+        margin-right: 2.5%;
+        margin-left: 2.5%;
+    }
+    .faqContent h2{
+        padding: 16px 32px 16px 8px;
+    }
+    .faqIcon{
+        font-size: 16px;
+        padding: 0 40px 0 8px;
+    }
+    .faqDescription{
+        font-size: 16px;
+        padding: 16px 8px 8px 8px;
+    }
+    .faqContainer button{
+        width: 80%;
+        margin-right:10% ;
+        margin-left: 10%;
+    }
+}
+@media (max-width:300px){
+    .patientContentHeader h2{
+        font-size: 24px;
+    }
+    .patientAwarenessTitle{
+        font-size: 24px;
+        font-weight: 600;
+        padding: 8px 0 8px 0;
+    }
+    .patientAwarenessContent{
+        flex-direction: column;
+    }
+    .prescrbecontent{
+        width: 80%;
+        margin: 0 24px 0 24px;
+        background-position:top;
+        justify-content: center;
+        flex-direction: column;
+        background-repeat: no-repeat;
+        background-image: url("../image/providers/prescribeinput.png");
+    }
+    .prescrbecontent img{
+        width: 30%;
+    }
+    .prescribeheadpara{
+        font-size: 16px;
+        padding: 24px 8px 32px 8px;
+    }
+    .prescribecontentbottom{
+        background-position: left;
+        background-repeat: no-repeat;
+        background-image: url("../image/providers/plus2.png");
+    }
+    .prescribecontentbottom h2{
+        font-size: 16px;
+    }
+    .prescribecontentbottom i{
+        font-size: 13px;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-image: url("../image//providers/plus3.png");
+    }
+    .prescribecontentbottom strong{
+        font-size: 16px;
+    }
+    .prescribecontentbottom p{
+        font-size: 10px;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-image: url("../image//providers/plus1.png");
+    }
+    .prescribecontentbottom button{
+        width: 100%;
+        font-size: 16px;
+        margin: 0 20% 0 20%;
+    }
+    .patientsThanks{
+        flex-direction: column;
+        padding: 112px 24px 112px 24px;
+    }
+    .patientsContent{
+        padding:16px 16px;
+        align-items: start;
+        flex-direction: column;
+        justify-content: center;
+     }
+    .patientsThanks h2{
+        font-size: 24px;
+        margin-bottom: 40px;
+    }
+    .patientsThanksData{
+        flex-direction: column;
+        justify-content: start;
+    }
+    .patientsThanksIcon{
+        font-size: 20px;
+        padding-bottom: 4px;
+    }
+    .patientsThanksData p{
+        font-size: 16px;
+        padding: 0 0 24px 0;
+    }
+    .partnerContainer{
+        background-position: 20px 100px;
+        flex-direction: column;
+    }
+    .partnerContainer img{
+        width: 80%;
+        background-position: 10px 90px;
+    }
+    .partnerContentBottom{
+        padding: 64px 0 64px 0;
+    }
+    .partnerContentBottom h2{
+        font-size: 24px;
+        text-align:center;
+    }
+    .partnerContentBottom p{
+        padding: 0 0;
+        font-size: 16px;
+    }
+    .faqContainer{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .faqContent{
+        width: 95%;
+        margin-left: 2.5%;
+        margin: 24px 0 0 0;
+        margin-right: 2.5%;
+    }
+    .faqContent h2{
+        font-size: 16px;
+        padding: 16px 32px 16px 8px;
+    }
+    .faqIcon{
+        font-size: 16px;
+        padding: 0 40px 0 8px;
+    }
+    .faqDescription{
+        font-size: 16px;
+        padding: 16px 8px 8px 8px;
+    }
+    .faqContainer button{
+        width: 100%;
+    }
+}
+/* Media Queries Ends */
